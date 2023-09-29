@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,17 +12,18 @@
         <nav>
             <ul>
                 <li>Acceuil</li>
-                <li>A propos</li>
-                <li>Projets</li>
-                <li>Contact</li>
+                <li><a href="#propos">A propos</a></li>
+                <li><a href="#projets">Projets</a></li>
+                <li><a href="#contactez_moi">Contact</a></li>
             </ul>
         </nav>
     </header>
-        <!-------- Section "A Propos" ------>
+    <main>   
+            <!-------- Section "A Propos" ------>
         <section>
-            <img src="" alt="Mon profil photo">
-
-            <h2>A propos</h2>
+            <h2>A propos de moi</h2>
+                <a id="propos"></a>
+            <p><img src="Photo_id.jpg" alt="Une photo de moi" width="200"></p>
 
             <h3>Ma formation</h3>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis placeat deserunt quasi dolorem? .</p>
@@ -33,7 +34,8 @@
 
         <!------- Section Projets --------->
         <section>
-            <h2>Projets</h2>
+            <h2>Mes projets</h2>
+            <a id="projets"></a>
             <article>
                 <h3>Projet 1</h3>
                 <img src="" alt="Mon projet 1">
@@ -66,6 +68,7 @@
         <!-------- Section de contact -------->
         <section>
             <h2>Contactez-moi</h2>
+            <a id="contactez_moi"></a>
             <form action="">
                 <ul>
                     <li>
@@ -81,7 +84,7 @@
                         <input type="text" id="sujet" name="user_sujet">
                     </li>
                     <li>
-                        <label for="Msg">Votre Message</label>
+                        <label for="msg">Votre Message</label>
                         <textarea name="msg" id="msg" cols="30" rows="10"></textarea>
                     </li>
                     <li>
@@ -90,10 +93,23 @@
                 </ul>
              </form>
         </section>
-
+     </main>
     <footer>
-        <p>Copyright</p>
+        <p>&#9400;</p>
         <a href="https://www.facebook.com/?locale=fr_FR">Je n'ai pas de Facebook !</a>
+        <div id="wrapper-9cd199b9cc5410cd3b1ad21cab2e54d3">
+            <div id="map-9cd199b9cc5410cd3b1ad21cab2e54d3"></div><script>(function () {
+            var setting = {"query":"La Piscine, Avenue de la Marne, Mérignac, France","width":400,"height":200,"satellite":true,"zoom":12,"placeId":"ChIJP7M-c0UoVQ0R_8zk3sgY-Ss","cid":"0x2bf918c8dee4ccff","coords":[44.8336426,-0.6379578],"lang":"fr","queryString":"La Piscine, Avenue de la Marne, Mérignac, France","centerCoord":[44.8336426,-0.6379578],"id":"map-9cd199b9cc5410cd3b1ad21cab2e54d3","embed_id":"1002854"};
+            var d = document;
+            var s = d.createElement('script');
+            s.src = 'https://1map.com/js/script-for-user.js?embed_id=1002854';
+            s.async = true;
+            s.onload = function (e) {
+              window.OneMap.initMap(setting)
+            };
+            var to = d.getElementsByTagName('script')[0];
+            to.parentNode.insertBefore(s, to);
+          })();</script><a href="https://1map.com/fr/map-embed">1 Map</a></div>
 
     </footer>    
 </body>
